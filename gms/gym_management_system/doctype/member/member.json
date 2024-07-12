@@ -1,0 +1,199 @@
+{
+ "_liked_by": "[\"Administrator\"]",
+ "actions": [],
+ "autoname": "format:{first_name}-{last_name}-{###}",
+ "creation": "2024-07-09 11:00:11.393553",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "members_details_section",
+  "first_name",
+  "full_name",
+  "gender",
+  "column_break_hcss",
+  "last_name",
+  "age",
+  "profile",
+  "section_break_iwxw",
+  "email",
+  "phone_number",
+  "column_break_bhvu",
+  "address",
+  "membership_section",
+  "membership",
+  "subscription_start",
+  "trainer",
+  "column_break_cmem",
+  "locker_occupied",
+  "subscription_end"
+ ],
+ "fields": [
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "is_virtual": 1,
+   "label": "Full Name",
+   "options": "f\"{doc.first_name} {doc.last_name}\"",
+   "read_only": 1
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "membership",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Membership",
+   "options": "Membership"
+  },
+  {
+   "fieldname": "column_break_hcss",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Date",
+   "label": "Date of Birth",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "members_details_section",
+   "fieldtype": "Section Break",
+   "label": "Members Details"
+  },
+  {
+   "default": "Not Occupied\n",
+   "fieldname": "locker_occupied",
+   "fieldtype": "Link",
+   "label": "Locker Number",
+   "options": "Locker Bookings"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "Male\nFemale\nOthers"
+  },
+  {
+   "fieldname": "profile",
+   "fieldtype": "Attach Image",
+   "label": "Profile"
+  },
+  {
+   "fieldname": "section_break_iwxw",
+   "fieldtype": "Section Break",
+   "label": "Contact"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Phone",
+   "in_list_view": 1,
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "column_break_bhvu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "membership_section",
+   "fieldtype": "Section Break",
+   "label": "Membership"
+  },
+  {
+   "fieldname": "subscription_start",
+   "fieldtype": "Date",
+   "label": "Subscription Start"
+  },
+  {
+   "fieldname": "trainer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Trainer",
+   "options": "Trainers"
+  },
+  {
+   "fieldname": "column_break_cmem",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "subscription_end",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Subscription End"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-10 12:41:00.708206",
+ "modified_by": "Administrator",
+ "module": "gym_management_system",
+ "name": "Member",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gym Admin",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gym Member",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gym Trainer",
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,60 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-09 17:59:10.537964",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "exercies_section",
+  "exercise_name",
+  "sets",
+  "reps",
+  "notes",
+  "equipment"
+ ],
+ "fields": [
+  {
+   "fieldname": "exercise_name",
+   "fieldtype": "Data",
+   "label": "Exercise Name"
+  },
+  {
+   "fieldname": "sets",
+   "fieldtype": "Int",
+   "label": "Sets"
+  },
+  {
+   "fieldname": "reps",
+   "fieldtype": "Int",
+   "label": "Reps"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "equipment",
+   "fieldtype": "Data",
+   "label": "Equipment"
+  },
+  {
+   "fieldname": "exercies_section",
+   "fieldtype": "Section Break",
+   "label": "Exercies"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-09 18:01:38.286318",
+ "modified_by": "Administrator",
+ "module": "gym_management_system",
+ "name": "Exercises",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

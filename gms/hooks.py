@@ -4,6 +4,7 @@ app_publisher = "Jerald"
 app_description = "a web application for gym management system"
 app_email = "jeraldin@gmail.com"
 app_license = "mit"
+
 # required_apps = []
 
 # Includes in <head>
@@ -226,4 +227,3 @@ app_license = "mit"
 # default_log_clearing_doctypes = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
-

@@ -1,0 +1,72 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-09 18:02:57.343770",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "gym_name",
+  "gym_address",
+  "contact_information",
+  "email_for_notifications",
+  "working_hours",
+  "membership_plans"
+ ],
+ "fields": [
+  {
+   "fieldname": "gym_name",
+   "fieldtype": "Data",
+   "label": "Gym Name"
+  },
+  {
+   "fieldname": "gym_address",
+   "fieldtype": "Data",
+   "label": "Gym Address"
+  },
+  {
+   "fieldname": "contact_information",
+   "fieldtype": "Int",
+   "label": "Contact Information"
+  },
+  {
+   "fieldname": "email_for_notifications",
+   "fieldtype": "Data",
+   "label": "Email for Notifications"
+  },
+  {
+   "fieldname": "working_hours",
+   "fieldtype": "Small Text",
+   "label": "Working Hours"
+  },
+  {
+   "fieldname": "membership_plans",
+   "fieldtype": "Link",
+   "label": "Membership Plans",
+   "options": "Membership"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-09 18:04:24.028234",
+ "modified_by": "Administrator",
+ "module": "gym_management_system",
+ "name": "Gym Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
