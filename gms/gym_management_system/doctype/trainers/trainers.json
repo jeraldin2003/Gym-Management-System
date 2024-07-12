@@ -41,7 +41,6 @@
   {
    "fieldname": "email",
    "fieldtype": "Data",
-   "in_list_view": 1,
    "label": "Email",
    "options": "Email"
   },
@@ -75,7 +74,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-11 15:42:34.730568",
+ "modified": "2024-07-12 11:51:59.133606",
  "modified_by": "Administrator",
  "module": "gym_management_system",
  "name": "Trainers",

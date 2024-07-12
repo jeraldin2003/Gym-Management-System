@@ -1,5 +1,4 @@
 {
- "_liked_by": "[\"Administrator\"]",
  "actions": [],
  "allow_rename": 1,
  "autoname": "format:{trainer}-{###}",
@@ -25,7 +24,6 @@
   {
    "fieldname": "customer",
    "fieldtype": "Link",
-   "in_list_view": 1,
    "label": "Customer",
    "options": "Member"
   },
@@ -52,7 +50,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-11 11:30:48.992451",
+ "modified": "2024-07-12 10:25:08.693066",
  "modified_by": "Administrator",
  "module": "gym_management_system",
  "name": "Trainer Feedback",
