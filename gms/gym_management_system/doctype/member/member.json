@@ -1,5 +1,4 @@
 {
- "_liked_by": "[\"Administrator\"]",
  "actions": [],
  "autoname": "format:{first_name}-{last_name}-{###}",
  "creation": "2024-07-09 11:00:11.393553",
@@ -77,6 +76,7 @@
    "default": "Not Occupied\n",
    "fieldname": "locker_occupied",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Locker Number",
    "options": "Locker Bookings"
   },
@@ -141,7 +141,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-10 12:41:00.708206",
+ "modified": "2024-07-12 15:54:34.572162",
  "modified_by": "Administrator",
  "module": "gym_management_system",
  "name": "Member",
