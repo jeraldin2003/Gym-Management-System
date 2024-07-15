@@ -11,7 +11,8 @@
   "thank_you_for_this",
   "column_break_bbpf",
   "rating",
-  "feedback"
+  "feedback",
+  "amended_from"
  ],
  "fields": [
   {
@@ -33,7 +34,7 @@
   },
   {
    "fieldname": "rating",
-   "fieldtype": "Float",
+   "fieldtype": "Rating",
    "in_list_view": 1,
    "label": "Rating"
   },
@@ -46,11 +47,22 @@
    "fieldname": "thank_you_for_this",
    "fieldtype": "Read Only",
    "label": "Thank you for this"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Trainer Feedback",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2024-07-12 10:25:08.693066",
+ "modified": "2024-07-15 11:42:58.997837",
  "modified_by": "Administrator",
  "module": "gym_management_system",
  "name": "Trainer Feedback",
