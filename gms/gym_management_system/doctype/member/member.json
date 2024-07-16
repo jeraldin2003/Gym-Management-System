@@ -25,8 +25,7 @@
   "trainer",
   "column_break_cmem",
   "locker_occupied",
-  "subscription_end",
-  "attendance"
+  "subscription_end"
  ],
  "fields": [
   {
@@ -139,17 +138,11 @@
    "fieldtype": "Date",
    "in_list_view": 1,
    "label": "Subscription End"
-  },
-  {
-   "fieldname": "attendance",
-   "fieldtype": "Table",
-   "label": "Attendance",
-   "options": "Attendance"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-15 16:56:49.588944",
+ "modified": "2024-07-16 10:01:33.182998",
  "modified_by": "Administrator",
  "module": "gym_management_system",
  "name": "Member",
