@@ -76,5 +76,3 @@ def execute(filters=None):
     gate = [{'member_name': member['name'], **attendance_data[member['name']]} for member in members]  
 
     return columns, gate
-
-#this is a crazy code that is making me mad and i am done with git hub its annoying
