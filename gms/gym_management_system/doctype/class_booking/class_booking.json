@@ -1,37 +1,30 @@
 {
- "_liked_by": "[\"Administrator\"]",
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{class_name}{member_id}{###}",
  "creation": "2024-07-09 17:54:05.009268",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "class_name",
   "member_id",
-  "trainer_id",
   "column_break_afqd",
   "date",
-  "time",
-  "status",
-  "amended_from"
+  "status"
  ],
  "fields": [
   {
    "fieldname": "class_name",
-   "fieldtype": "Data",
-   "label": "Class Name"
+   "fieldtype": "Link",
+   "label": "Class Name",
+   "options": "Classes Available"
   },
   {
    "fieldname": "member_id",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Member ID",
    "options": "Member"
-  },
-  {
-   "fieldname": "trainer_id",
-   "fieldtype": "Link",
-   "label": "Trainer ID",
-   "options": "Trainers"
   },
   {
    "fieldname": "column_break_afqd",
@@ -40,37 +33,24 @@
   {
    "fieldname": "date",
    "fieldtype": "Date",
+   "in_list_view": 1,
    "label": "Date"
-  },
-  {
-   "fieldname": "time",
-   "fieldtype": "Time",
-   "label": "Time"
   },
   {
    "fieldname": "status",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "Status",
-   "options": "Booked\nAttended"
-  },
-  {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Class Booking",
-   "print_hide": 1,
-   "read_only": 1,
-   "search_index": 1
+   "options": "Booked\nAttended\nCancled"
   }
  ],
  "index_web_pages_for_search": 1,
- "is_submittable": 1,
  "links": [],
- "modified": "2024-07-09 18:07:57.061617",
+ "modified": "2024-07-15 15:37:27.082218",
  "modified_by": "Administrator",
  "module": "gym_management_system",
  "name": "Class Booking",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

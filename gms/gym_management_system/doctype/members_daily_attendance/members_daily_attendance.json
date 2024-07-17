@@ -1,59 +1,51 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{trainer}-{###}",
- "creation": "2024-07-09 16:28:56.103979",
+ "autoname": "format:{mem_id}-{date}",
+ "creation": "2024-07-16 10:11:17.383921",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "trainer",
-  "customer",
-  "thank_you_for_this",
-  "column_break_bbpf",
-  "rating",
-  "feedback",
+  "section_break_uimv",
+  "attendance",
+  "mem_id",
+  "column_break_hpaq",
+  "date",
   "amended_from"
  ],
  "fields": [
   {
-   "fieldname": "trainer",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "label": "Trainer",
-   "options": "Trainers"
+   "fieldname": "section_break_uimv",
+   "fieldtype": "Section Break"
   },
   {
-   "fieldname": "customer",
+   "fieldname": "attendance",
+   "fieldtype": "Select",
+   "label": "Attendance",
+   "options": "Present",
+   "read_only": 1
+  },
+  {
+   "fieldname": "mem_id",
    "fieldtype": "Link",
-   "label": "Customer",
+   "label": "Member ID",
    "options": "Member"
   },
   {
-   "fieldname": "column_break_bbpf",
+   "fieldname": "column_break_hpaq",
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "rating",
-   "fieldtype": "Rating",
-   "in_list_view": 1,
-   "label": "Rating"
-  },
-  {
-   "fieldname": "feedback",
-   "fieldtype": "Text",
-   "label": "Feedback"
-  },
-  {
-   "fieldname": "thank_you_for_this",
-   "fieldtype": "Read Only",
-   "label": "Thank you for this"
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
   },
   {
    "fieldname": "amended_from",
    "fieldtype": "Link",
    "label": "Amended From",
    "no_copy": 1,
-   "options": "Trainer Feedback",
+   "options": "Members Daily Attendance",
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
@@ -62,10 +54,10 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-07-15 11:42:58.997837",
+ "modified": "2024-07-16 10:33:02.101437",
  "modified_by": "Administrator",
  "module": "gym_management_system",
- "name": "Trainer Feedback",
+ "name": "Members Daily Attendance",
  "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
@@ -79,6 +71,7 @@
    "report": 1,
    "role": "System Manager",
    "share": 1,
+   "submit": 1,
    "write": 1
   }
  ],

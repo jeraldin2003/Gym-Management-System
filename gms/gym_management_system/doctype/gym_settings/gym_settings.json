@@ -25,7 +25,7 @@
   },
   {
    "fieldname": "contact_information",
-   "fieldtype": "Int",
+   "fieldtype": "Phone",
    "label": "Contact Information"
   },
   {
@@ -47,7 +47,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-09 18:04:24.028234",
+ "modified": "2024-07-12 16:03:18.875206",
  "modified_by": "Administrator",
  "module": "gym_management_system",
  "name": "Gym Settings",

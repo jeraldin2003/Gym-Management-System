@@ -77,6 +77,7 @@
    "default": "Not Occupied\n",
    "fieldname": "locker_occupied",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Locker Number",
    "options": "Locker Bookings"
   },
@@ -141,7 +142,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-10 12:41:00.708206",
+ "modified": "2024-07-16 10:01:33.182998",
  "modified_by": "Administrator",
  "module": "gym_management_system",
  "name": "Member",
