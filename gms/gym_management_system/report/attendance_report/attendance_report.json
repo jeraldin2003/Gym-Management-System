@@ -10,6 +10,7 @@
  "is_standard": "Yes",
  "letterhead": null,
  "modified": "2024-07-17 13:26:45.769887",
+ "modified": "2024-07-15 17:53:37.938072",
  "modified_by": "Administrator",
  "module": "gym_management_system",
  "name": "Attendance report",
@@ -20,4 +21,18 @@
  "report_script": "",
  "report_type": "Script Report",
  "roles": []
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Gym Admin"
+  },
+  {
+   "role": "Gym Member"
+  },
+  {
+   "role": "Gym Trainer"
+  }
+ ]
 }

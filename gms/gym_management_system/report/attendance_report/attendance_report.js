@@ -42,4 +42,7 @@ frappe.query_reports["Attendance report"] = {
         return value;
     }
 
+	"filters": [
+
+	]
 };
