@@ -25,5 +25,8 @@ class Invoice(Document):
 			if lockers['member_id']==member_id:
 				self.locker_cost = lockers['cost']
 				self.locker_occupied = lockers['member_id']
+		
 
-#############################################
+		#############################################
+
+		

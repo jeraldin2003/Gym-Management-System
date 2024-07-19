@@ -1,0 +1,108 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-19 12:29:58.580783",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "facilities_taken_section",
+  "classes_attended",
+  "locker_occupied",
+  "membership",
+  "linking__doc",
+  "column_break_ydcz",
+  "total_expense_this_month",
+  "cost_of_lockers",
+  "membership_expense",
+  "section_break_dejk",
+  "grand_total",
+  "taxes_18",
+  "net_total"
+ ],
+ "fields": [
+  {
+   "fieldname": "facilities_taken_section",
+   "fieldtype": "Section Break",
+   "label": "Facilities Taken "
+  },
+  {
+   "fetch_from": "linking__doc.classes_attended",
+   "fieldname": "classes_attended",
+   "fieldtype": "Data",
+   "label": "Classes Attended"
+  },
+  {
+   "fieldname": "column_break_ydcz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "classes_attended.locker_cost",
+   "fieldname": "cost_of_lockers",
+   "fieldtype": "Data",
+   "label": "Cost of lockers"
+  },
+  {
+   "fieldname": "linking__doc",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "linking__DOC",
+   "options": "Invoice"
+  },
+  {
+   "fieldname": "section_break_dejk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "grand_total",
+   "fieldtype": "Int",
+   "label": "Grand Total"
+  },
+  {
+   "fieldname": "taxes_18",
+   "fieldtype": "Int",
+   "label": "Taxes (18%)"
+  },
+  {
+   "fieldname": "net_total",
+   "fieldtype": "Data",
+   "label": "Net Total"
+  },
+  {
+   "fetch_from": "classes_attended.total_expense_this_month",
+   "fieldname": "total_expense_this_month",
+   "fieldtype": "Data",
+   "label": "Cost of classes"
+  },
+  {
+   "fetch_from": "classes_attended.locker_occupied",
+   "fieldname": "locker_occupied",
+   "fieldtype": "Data",
+   "label": "Locker Booked"
+  },
+  {
+   "fetch_from": "classes_attended.membership_expense",
+   "fieldname": "membership_expense",
+   "fieldtype": "Data",
+   "label": "Cost of membership"
+  },
+  {
+   "fetch_from": "classes_attended.membership",
+   "fieldname": "membership",
+   "fieldtype": "Data",
+   "label": "Membership taken"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-19 16:06:13.623574",
+ "modified_by": "Administrator",
+ "module": "gym_management_system",
+ "name": "Invoice Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
