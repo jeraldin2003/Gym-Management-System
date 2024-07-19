@@ -1,0 +1,29 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-18 11:08:01.563675",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_1bqu"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_1bqu",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-18 11:08:01.563675",
+ "modified_by": "Administrator",
+ "module": "gym_management_system",
+ "name": "Classes attended by each member",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

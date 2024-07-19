@@ -1,25 +1,19 @@
 {
+ "_liked_by": "[\"Administrator\"]",
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{class_name}{member_id}{date}",
- "creation": "2024-07-09 17:54:05.009268",
+ "autoname": "format:{member_id}",
+ "creation": "2024-07-19 10:26:13.603694",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "class_name",
   "member_id",
+  "locker_number",
+  "column_break_jreo",
   "cost",
-  "column_break_afqd",
-  "date",
-  "status"
+  "locker_size"
  ],
  "fields": [
-  {
-   "fieldname": "class_name",
-   "fieldtype": "Link",
-   "label": "Class Name",
-   "options": "Classes Available"
-  },
   {
    "fieldname": "member_id",
    "fieldtype": "Link",
@@ -28,37 +22,39 @@
    "options": "Member"
   },
   {
-   "fieldname": "column_break_afqd",
+   "fieldname": "locker_number",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Locker Number",
+   "options": "Locker Bookings"
+  },
+  {
+   "fieldname": "column_break_jreo",
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "date",
-   "fieldtype": "Date",
-   "in_list_view": 1,
-   "label": "Date"
-  },
-  {
-   "fieldname": "status",
-   "fieldtype": "Select",
-   "in_list_view": 1,
-   "label": "Status",
-   "options": "Booked\nAttended\nCancled"
-  },
-  {
-   "default": "10000",
+   "fetch_from": "locker_number.cost",
    "fieldname": "cost",
-   "fieldtype": "Select",
+   "fieldtype": "Int",
+   "in_list_view": 1,
    "label": "Cost",
-   "options": "10000",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "locker_number.size",
+   "fieldname": "locker_size",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Locker Size",
    "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-18 15:54:11.138837",
+ "modified": "2024-07-19 10:38:00.492775",
  "modified_by": "Administrator",
  "module": "gym_management_system",
- "name": "Class Booking",
+ "name": "Locker Selection",
  "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [

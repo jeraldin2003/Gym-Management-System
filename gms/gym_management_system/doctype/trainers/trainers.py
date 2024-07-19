@@ -6,6 +6,7 @@ from frappe.model.document import Document
 
 class Trainers(Document):
        def before_save(self):
+        frappe.throw("HELLOWS")
 
         latest_doc= frappe.get_last_doc('Trainer Feedback')
         doc_data = frappe.db.get_value('Trainer Feedback',latest_doc,'trainer')

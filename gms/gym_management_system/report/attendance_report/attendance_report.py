@@ -46,7 +46,7 @@ def execute(filters=None):
     while date <= end_of_month:
         label = date.strftime("%Y-%m-%d") 
         month_str = date.strftime("%m")  # Store only the month in a variable (for debugging purpose)
-        print('\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', month_str)
+        #print('\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n', month_str)
         fieldname = date.strftime("%Y-%m-%d") # Fieldname can be same as label for simplicity
         columns.append({
             "label": label,
@@ -74,5 +74,5 @@ def execute(filters=None):
 
     # Prepare the data for the report
     gate = [{'member_name': member['name'], **attendance_data[member['name']]} for member in members]  
-
+    print('\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n',frappe.db.get_all('Member Daily Attendance'))
     return columns, gate

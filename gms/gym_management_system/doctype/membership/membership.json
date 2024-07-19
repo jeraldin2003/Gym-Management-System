@@ -1,7 +1,7 @@
 {
  "_liked_by": "[\"Administrator\"]",
  "actions": [],
- "autoname": "autoincrement",
+ "autoname": "format:{membership_type}",
  "creation": "2024-07-09 15:38:55.274338",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -61,11 +61,11 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-07-10 12:09:02.325241",
+ "modified": "2024-07-18 17:01:12.390680",
  "modified_by": "Administrator",
  "module": "gym_management_system",
  "name": "Membership",
- "naming_rule": "Autoincrement",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

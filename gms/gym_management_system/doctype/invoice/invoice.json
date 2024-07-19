@@ -1,0 +1,113 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{member_id}",
+ "creation": "2024-07-18 11:03:09.152607",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "member_id",
+  "status",
+  "membership",
+  "membership_expense",
+  "column_break_lqmn",
+  "total_expense_this_month",
+  "classes_attended",
+  "invoice_date",
+  "locker_occupied",
+  "locker_cost"
+ ],
+ "fields": [
+  {
+   "fieldname": "member_id",
+   "fieldtype": "Link",
+   "label": "Member ID",
+   "options": "Member"
+  },
+  {
+   "fetch_from": "member_id.member_status",
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Member",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "member_id.membership",
+   "fieldname": "membership",
+   "fieldtype": "Data",
+   "label": "Membership",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_expense_this_month",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Class Expense",
+   "read_only": 1
+  },
+  {
+   "fieldname": "classes_attended",
+   "fieldtype": "Data",
+   "label": " Classes attended ",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_lqmn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "invoice_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Invoice Date"
+  },
+  {
+   "fetch_from": "member_id.membership_cost",
+   "fieldname": "membership_expense",
+   "fieldtype": "Data",
+   "label": "Membership Expense",
+   "read_only": 1
+  },
+  {
+   "fieldname": "locker_occupied",
+   "fieldtype": "Link",
+   "label": "Locker Occupied",
+   "options": "Locker Selection",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "locker_occupied.cost",
+   "fieldname": "locker_cost",
+   "fieldtype": "Data",
+   "label": "Locker cost",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-19 11:06:55.735952",
+ "modified_by": "Administrator",
+ "module": "gym_management_system",
+ "name": "Invoice",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

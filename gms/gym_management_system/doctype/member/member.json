@@ -1,5 +1,4 @@
 {
- "_liked_by": "[\"Administrator\"]",
  "actions": [],
  "autoname": "format:{first_name}-{last_name}-{###}",
  "creation": "2024-07-09 11:00:11.393553",
@@ -23,9 +22,11 @@
   "membership",
   "subscription_start",
   "trainer",
+  "membership_cost",
   "column_break_cmem",
-  "locker_occupied",
-  "subscription_end"
+  "locker_number",
+  "subscription_end",
+  "member_status"
  ],
  "fields": [
   {
@@ -72,13 +73,6 @@
    "fieldname": "members_details_section",
    "fieldtype": "Section Break",
    "label": "Members Details"
-  },
-  {
-   "default": "Not Occupied\n",
-   "fieldname": "locker_occupied",
-   "fieldtype": "Link",
-   "label": "Locker Number",
-   "options": "Locker Bookings"
   },
   {
    "fieldname": "gender",
@@ -137,11 +131,34 @@
    "fieldtype": "Date",
    "in_list_view": 1,
    "label": "Subscription End"
+  },
+  {
+   "default": "Active",
+   "fieldname": "member_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Member Status",
+   "options": "Active\nInactive"
+  },
+  {
+   "fetch_from": "membership.price",
+   "fieldname": "membership_cost",
+   "fieldtype": "Data",
+   "label": "Membership cost"
+  },
+  {
+   "default": "Not Occupied\n",
+   "fieldname": "locker_number",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Locker Number",
+   "options": "Locker Bookings"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-10 12:41:00.708206",
+ "modified": "2024-07-19 10:11:43.467379",
  "modified_by": "Administrator",
  "module": "gym_management_system",
  "name": "Member",
