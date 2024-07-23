@@ -12,7 +12,6 @@
   "status",
   "membership",
   "membership_expenses",
-  "table_fcac",
   "column_break_lqmn",
   "total_expense_this_month",
   "classes_attended",
@@ -20,7 +19,9 @@
   "invoice_date",
   "locker_occupied",
   "locker_cost",
-  "trainer_name"
+  "trainer_name",
+  "section_break_xelg",
+  "table_fcac"
  ],
  "fields": [
   {
@@ -89,7 +90,7 @@
    "options": "Invoice Table"
   },
   {
-   "fetch_from": "member_id.first_name",
+   "fetch_from": "member_id.full_name",
    "fieldname": "customer_name",
    "fieldtype": "Data",
    "label": "Customer Name"
@@ -111,11 +112,15 @@
    "fieldtype": "Data",
    "label": "Membership Expense",
    "read_only": 1
+  },
+  {
+   "fieldname": "section_break_xelg",
+   "fieldtype": "Section Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-19 17:03:54.326795",
+ "modified": "2024-07-23 13:36:09.809838",
  "modified_by": "Administrator",
  "module": "gym_management_system",
  "name": "Invoice",
