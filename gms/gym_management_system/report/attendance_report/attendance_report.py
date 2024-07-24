@@ -74,5 +74,5 @@ def execute(filters=None):
 
     # Prepare the data for the report
     gate = [{'member_name': member['name'], **attendance_data[member['name']]} for member in members]  
-    print('\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n',frappe.db.get_all('Member Daily Attendance'))
+    #print('\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n',frappe.db.get_all('Member Daily Attendance'))
     return columns, gate

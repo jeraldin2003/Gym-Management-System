@@ -1,0 +1,81 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{member_name}-{date}",
+ "creation": "2024-07-24 13:10:25.966900",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "member_id",
+  "member_name",
+  "date",
+  "column_break_vuds",
+  "weight_in_lbs",
+  "weight",
+  "calories_consumed"
+ ],
+ "fields": [
+  {
+   "fieldname": "member_id",
+   "fieldtype": "Link",
+   "label": "Member Id",
+   "options": "Member"
+  },
+  {
+   "fetch_from": "member_id.full_name",
+   "fieldname": "member_name",
+   "fieldtype": "Data",
+   "label": "Member Name"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "weight",
+   "fieldtype": "Float",
+   "label": "Weight Measured"
+  },
+  {
+   "fieldname": "calories_consumed",
+   "fieldtype": "Int",
+   "label": "Calories consumed"
+  },
+  {
+   "fieldname": "weight_in_lbs",
+   "fieldtype": "Float",
+   "label": "Weight in Lbs",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_vuds",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-24 14:52:29.519333",
+ "modified_by": "Administrator",
+ "module": "gym_management_system",
+ "name": "fitness journey of customers",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
