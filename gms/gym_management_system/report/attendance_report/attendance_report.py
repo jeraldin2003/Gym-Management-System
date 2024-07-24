@@ -57,7 +57,7 @@ def execute(filters=None):
         date += timedelta(days=1)
 
     ################### CALCULATING THE ATTENDANCE #################
-    member_attendance = frappe.get_all('Members Daily Attendance',
+    member_attendance = frappe.get_all('Member Daily Attendance',
                                        fields=['mem_id', 'date', 'attendance'],
                                        filters={'date': ['between', [start_of_month_dt, end_of_month_dt]]})
 

@@ -6,5 +6,4 @@ from frappe.model.document import Document
 
 
 class fitnessjourneyofcustomers(Document):
-	def before_save(self):
 		pass
